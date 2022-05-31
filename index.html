@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awake</title>
+    <title>Josh Greiff</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./public/style.css">
 
@@ -64,6 +64,10 @@
         .poppins{
             font-family: poppins
         }
+
+        .card{
+
+        }
     </style>
     <style type="postcss">
         
@@ -73,21 +77,21 @@
     <!-- Header -->
     <header>
             <nav class="container flex items-center mt-4 sm:mt-12 ">
-                <div class="poppins text-3xl uppercase bold">
+                <div class="poppins text-4xl uppercase bold">
                     <h1>Josh Greiff</h1>
                 </div>   
-                <ul class="justify-end flex flex-1 gap-10 poppins">
-                    <li>About</li>
-                    <li>My Work</li>
-                    <li>Contact</li>
+                <ul class="justify-end flex flex-1 gap-10 poppins text-xl">
+                    <li class="cursor-pointer">About</li>
+                    <li class="cursor-pointer">My Work</li>
+                    <li class="cursor-pointer">Contact</li>
                 </ul>
             </nav>
     </header>
     <!-- Hero -->
-    <div  class="container flex items-center mt-20">
+    <div  class="container flex items-center mt-40 mb-60">
         <div class="mr-20">
-            <h2 class="text-2xl mb-10">Hello, I'm Josh</h2>
-            <p>I am a full stack web developer fluent in HTML, CSS, JavaScript, Node.js, SQL and more.
+            <h2 class="text-3xl mb-10">Hello, I'm Josh</h2>
+            <p class="text-xl">I am a full stack web developer fluent in HTML, CSS, JavaScript, Node.js, SQL and more.
                 Check out some of my previous work below and I'd love to connect and see how we can work together!
             </p>
             <div class="text-3xl pt-10 flex gap-10">
@@ -100,8 +104,107 @@
             <img src="./img/undraw_developer_activity_re_39tg.svg" alt="">
         </div>
     </div>
-
-
+    <!-- My Work -->
+    <div class="container flex flex-row gap-20">
+            <!-- Cards Go Here -->
+            <div class="rounded overflow-hidden shadow-lg bg-gray-800">
+                <a href="https://joshgreiff.github.io/run-buddy/">
+                    <img class="w-full" src="./img/run-buddy-ss.png" alt="">
+                </a>
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Run Buddy</div>
+                  <p class="text-gray-400 text-base">
+                    A landing page for a run tracking application using pure HTML and CSS.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
+                </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg bg-gray-800">
+                <a href="https://joshgreiff.github.io/Coding-Quiz/">
+                    <img class="w-full h-90" src="./img/coding-quiz-ss.png" alt="">
+                </a>
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Coding Quiz</div>
+                  <p class="text-gray-400 text-base">
+                    An interactive quiz that stores a high score in the browser and has a built in timer.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+                </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg bg-gray-800">
+                <a href="https://github.com/joshgreiff/trivia">
+                    <img class="w-full h-90" src="./img/electrivia-ss.png" alt="">
+                </a>
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Electrivia</div>
+                  <p class="text-gray-400 text-base">
+                    A quiz-taking site where users can post and take quizzes. Full stack application with working 
+                    API routes for logging in, creating and manipulating data etc. 
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Node.JS</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Express.JS</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Handlebars.JS</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">MySQL/Sequelize</span>
+                </div>
+            </div>
+    </div>
+    <div class="container flex flex-row gap-20">
+        <!-- Cards Go Here -->
+        <div class="rounded overflow-hidden shadow-lg bg-gray-800">
+            <a href="https://joshgreiff.github.io/run-buddy/">
+                <img class="w-full" src="./img/awake-ss.png" alt="">
+            </a>
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Awake Landing Page</div>
+              <p class="text-gray-400 text-base">
+                A landing page I created for an app idea. Clean dark theme.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">TailwindCSS</span>
+            </div>
+        </div>
+        <div class="rounded overflow-hidden shadow-lg bg-gray-800">
+            <a href="https://joshgreiff.github.io/Coding-Quiz/">
+                <img class="w-full h-90" src="./img/Annotation 2022-05-31 181626.png" alt="">
+            </a>
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Run Buddy</div>
+              <p class="text-gray-400 text-base">
+                A landing page for a run tracking application using pure HTML and CSS
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
+            </div>
+        </div>
+        <div class="rounded overflow-hidden shadow-lg bg-gray-800">
+            <a href="https://joshgreiff.github.io/Coding-Quiz/">
+                <img class="w-full h-90" src="./img/Annotation 2022-05-31 181626.png" alt="">
+            </a>
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Run Buddy</div>
+              <p class="text-gray-400 text-base">
+                A landing page for a run tracking application using pure HTML and CSS
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
+            </div>
+        </div>
+</div>
     <script src="./public/index.js"></script>
 </body>
 </html>
