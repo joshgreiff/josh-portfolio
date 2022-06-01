@@ -76,11 +76,12 @@
 <body class="bg-dark text-bookmark-white">
     <!-- Header -->
     <header>
-            <nav class="container flex items-center mt-4 sm:mt-12">
-                <div class="poppins text-4xl uppercase bold">
+            <nav class="container flex mt-4 sm:mt-12">
+                <div class="poppins text-5xl flex gap-5 uppercase bold mx-2">
                     <h1>Josh Greiff</h1>
+                    <i class="sm:hidden align-middle text-4xl fa-solid fa-bars mt-1 cursor-pointer"></i>
                 </div>   
-                <ul class="justify-end flex flex-1 gap-10 poppins text-xl">
+                <ul class="justify-end flex-1 gap-10 poppins text-xl hidden sm:flex">
                     <li class="cursor-pointer">
                       <a href="#about">About</a>
                     </li>
@@ -95,15 +96,26 @@
     </header>
     <!-- Hero -->
     <div  class="container flex flex-col sm:flex-row items-center mt-40 mb-60">
-        <div class="mr-20">
-            <h2 class="text-3xl mb-10 font-bold">Hello, I'm Josh</h2>
-            <p class="text-xl">I am a full stack web developer fluent in HTML, CSS, JavaScript, Node.js, SQL and more.
+        <div class="mr-0 md:mr-20">
+            <h2 class="text-3xl mb-10 font-bold text-center sm:text-left">Hello, I'm Josh</h2>
+            <p class="text-xl text-center sm:text-left">I am a full stack web developer fluent in HTML, CSS, JavaScript, Node.js, SQL and more.
                 Check out some of my previous work below and I'd love to connect and see how we can work together!
             </p>
-            <div class="text-3xl pt-10 flex gap-10">
-                <i class="fa-brands fa-github cursor-pointer"></i>
-                <i class="fa-brands fa-twitter cursor-pointer"></i>
-                <i class="fa-brands fa-linkedin cursor-pointer"></i>
+            <div class="text-3xl pt-10 flex gap-10 justify-center sm:justify-start">
+                <a href="https://github.com/joshgreiff">
+                  <i class="fa-brands fa-github cursor-pointer"></i>
+                </a>
+                <a href="https://twitter.com/joshgreiff">
+                  <i class="fa-brands fa-twitter cursor-pointer"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/joshua-greiff-29502718a/">
+                  <i class="fa-brands fa-linkedin cursor-pointer"></i>
+                </a>
+            </div>
+            <div class="flex justify-center mb-16 sm:justify-start">
+              <a href="./img/Josh Greiff Resume Final.pdf" download="proposed_file_name">
+                <button class="border-white border-3 mt-5 shadow bg-gray-500 hover:bg-dark focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">Download my resume</button>
+              </a>
             </div>
         </div>
         <div>
@@ -111,22 +123,25 @@
         </div>
     </div>
     <!-- About -->
-    <div class="container flex items-center justify-center text-3xl ">
-      <h1 id="about">About</h1>  
+    <div class="container flex items-center justify-center mb-20 text-3xl ">
+      <h1 id="about">About Me</h1>  
     </div>
-    <div  class="container flex flex-col sm:flex-row items-center mt-16 mb-60">
-      <div class="mr-20">
-        <img src="./img/undraw_fireworks_re_2xi7.svg" alt="">
-      </div>
-      <div class="mr-20"> 
-          <p class="text-xl text-left">
-            I am currently studying full stack web development through the Ohio State University Coding Bootcamp.
-            I originally wanted to pursue a business degree but I dropped out of college when I fell in love with technology.
-            I first got interested in coding when I discovered cryptocurrency and was insanely fascinated with finding out how it worked. 
-            I am currently 20 years old and live in Columbus, OH. 
+    <section class="container mb-32 flex items-center">
+      <div class="flex flex-wrap">
+        <div class="grow-0 shrink-0 basis-auto w-full md:w-2/12 lg:w-3/12">
+          <img src="./img/undraw_fireworks_re_2xi7.svg" class="w-full shadow-lg rounded-lg mb-6"
+            alt="" />
+        </div>
+        <div class="grow-0 shrink-0 basis-auto w-full md:w-10/12 lg:w-9/12 md:pl-6 text-center md:text-left">
+          <div class="mb-6 flex space-x-4 justify-center md:justify-start">
+          </div>
+          <p class="text-xl sm:text-m">
+            I am currently studying full stack web development through the Ohio State University Coding Bootcamp. I originally wanted to pursue a business degree but I dropped out of college when I fell in love with technology. I first got interested in coding when I discovered cryptocurrency and was insanely fascinated with finding out how it worked. I am currently 20 years old and live in Columbus, OH.
           </p>
-      </div>  
-    </div>
+        </div>
+      </div>
+    </section>
+   
     <!-- My Work -->
     <div class="container flex items-center justify-center mb-20 text-3xl ">
       <h1 id="my-work">My Work</h1>  
